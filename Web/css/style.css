@@ -1,0 +1,241 @@
+*,
+*::before,
+*::after{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+p{
+  font-size: 2rem;
+	padding: 3rem;
+}
+a{
+  text-decoration: none;
+}
+a{
+  color: white;
+  transition: 0.4s;
+  font-size: 2rem;
+}
+/* .prova:hover .descr-fascia_azienda{
+
+  background-size: 150% 150%;
+} */
+
+
+.sopra{
+  background: #06162e;
+ 
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-shadow: 1px 1px 10px black;
+}
+nav{
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#logo{
+  flex: 2 1 40rem;
+}
+#logo a{
+  font-size: 3rem;
+}
+#logo span{
+  color: lightblue;
+  margin: 0;
+}
+nav ul{
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+/*
+pagina alto*/
+
+.super-top{
+  display: flex;
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.8), transparent),url("./../img/heroimg2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.super-top h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.super-top h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.super-top a{
+  margin-top: 5rem;
+  padding: 2rem 6rem;
+  background: #1c345c;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+
+/*pagina scegli fascia*/
+#scegli{
+  background: #dfdfdf;
+}
+.descr-fascia_azienda{
+  display: flex;
+  min-height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/azienda.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transition: 3s;
+  -webkit-transition: 3s;
+  /* flex-direction: column; */
+}
+.descr-fascia_azienda h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.descr-fascia_azienda h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.descr-fascia_pers{
+  display: flex;
+  min-height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/person2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+  /* flex-direction: column; */
+}
+.descr-fascia_pers h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.descr-fascia_pers h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.descr-fascia_rest{
+  display: flex;
+  min-height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/restaurant.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+  /* flex-direction: column; */
+}
+.descr-fascia_rest h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.descr-fascia_rest h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.descr-fascia_bar{
+  display: flex;
+  min-height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/bar.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+  /* flex-direction: column; */
+}
+.spacer{
+  display: flex;
+  min-height: 50vh;
+  background: #bbb;
+  background-size: cover;
+  background-position: center;
+ 
+  
+  /* flex-direction: column; */
+}
+.descr-fascia_bar h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.descr-fascia_bar h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*
+media query per responsivet*/
+
+@media screen and (max-width: 950px){
+  /*body{
+    display: none;
+  }*/
+  html{
+    font-size: 60%;
+  }
+  nav{
+    display: flex;
+    text-align: center;
+  }
+  #logo{
+    padding: 2rem;
+
+  }
+  .mySlides{
+    flex-wrap: wrap;
+  }
+  .mostra-fascia{
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 1350px){
+  .pallini{
+    margin-top: 3em;
+  }
+  .sfoglia {
+    margin-top: 5rem;
+  }
+}
