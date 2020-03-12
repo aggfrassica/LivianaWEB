@@ -23,15 +23,10 @@ a{
   transition: 0.4s;
   font-size: 2rem;
 }
-/* .prova:hover .descr-fascia_azienda{
-
-  background-size: 150% 150%;
-} */
 
 
 .sopra{
   background: #06162e;
- 
   position: sticky;
   top: 0;
   z-index: 3;
@@ -67,28 +62,32 @@ nav ul{
 /*
 pagina alto*/
 
-.super-top{
+#maintop{
   display: flex;
-  min-height: 90vh;
-  background: linear-gradient(rgba(0,0,0,0.8), transparent),url("./../img/heroimg2.jpg");
-  background-size: cover;
-  background-position: bottom;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
 }
-.super-top h1{
+.principale{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #efefef;
+  min-width: 40vw;
+  width: 40vw;
+}
+.principale h1{
+  width: 60%;
   font-size: 4rem;
   padding: 2rem;
 }
-.super-top h2{
+.principale h2{
+  width: 60%;
   font-weight: 300;
   font-size: 2rem;
   padding: 2rem;
 }
-.super-top a{
+.principale a{
   margin-top: 5rem;
   padding: 2rem 6rem;
   background: #1c345c;
@@ -97,23 +96,88 @@ pagina alto*/
   font-size: 1.8rem;
   cursor: pointer;
 }
+.muovi{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  transition: width 1s;
+  justify-content: center;
+  align-items: center;
+}
+.muovi a, .banners a{
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #313131;
+}
+.muovi h1{
+  text-align: center;
+  font-size: 3.2rem;
+  padding: 1rem;
+  color: white;
+}
+.muovi h2{
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 1rem;
+  font-weight: 300;
+  color: white;
+}
+.muovi:hover{
+  width: 50vw;
+}
 
+.chef{
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/cuoco.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
+.metallo{
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/metallo.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+
+}
+.capelli{
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/capelli.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+
+/*
+Tornasu*/
+#azienda img{
+  width: 10rem;
+  z-index: 5;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  filter: drop-shadow(0px 0px 20px white);
+}
 
 /*pagina scegli fascia*/
-#scegli{
+.scegli{
+  position: relative;
+  display: flex;
   background: #dfdfdf;
+  min-height: 100vh;
+  align-items: center;
+}
+.banners{
+  display: flex;
+  min-height: 50vh;
+  width: 100%;
+    justify-content: center;
+  align-items: center;
 }
 .descr-fascia_azienda{
   display: flex;
-  min-height: 60vh;
   background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/azienda.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  transition: 3s;
-  -webkit-transition: 3s;
-  /* flex-direction: column; */
 }
 .descr-fascia_azienda h1{
   font-size: 4rem;
@@ -126,7 +190,6 @@ pagina alto*/
 }
 .descr-fascia_pers{
   display: flex;
-  min-height: 60vh;
   background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/person2.jpg");
   background-size: cover;
   background-position: center;
@@ -145,13 +208,10 @@ pagina alto*/
 }
 .descr-fascia_rest{
   display: flex;
-  min-height: 60vh;
   background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/restaurant.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  
-  /* flex-direction: column; */
 }
 .descr-fascia_rest h1{
   font-size: 4rem;
@@ -165,23 +225,11 @@ pagina alto*/
 
 .descr-fascia_bar{
   display: flex;
-  min-height: 70vh;
   background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/bar.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  
-  /* flex-direction: column; */
-}
-.spacer{
-  display: flex;
-  min-height: 50vh;
-  background: #bbb;
-  background-size: cover;
-  background-position: center;
- 
-  
-  /* flex-direction: column; */
+
 }
 .descr-fascia_bar h1{
   font-size: 4rem;
@@ -193,49 +241,23 @@ pagina alto*/
   padding: 2rem;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 
-/*
-media query per responsivet*/
-
-@media screen and (max-width: 950px){
-  /*body{
-    display: none;
-  }*/
-  html{
-    font-size: 60%;
-  }
-  nav{
+@media screen and (max-width: 1024px){
+  body{
     display: flex;
-    text-align: center;
-  }
-  #logo{
-    padding: 2rem;
-
-  }
-  .mySlides{
     flex-wrap: wrap;
+    flex-direction: column;
   }
-  .mostra-fascia{
+  #maintop{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #maintop div{
     width: 100%;
+    height: 50vh;
   }
-}
-
-
-
-@media screen and (max-width: 1350px){
-  .pallini{
-    margin-top: 3em;
-  }
-  .sfoglia {
-    margin-top: 5rem;
+  .banners{
+    flex-direction: column;
   }
 }

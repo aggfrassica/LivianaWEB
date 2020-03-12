@@ -9,91 +9,73 @@
 	<title>PC Home</title>
 </head>
 <body>
-	<!-- navbar -->
-	
-
-	<?php include(__DIR__.'/navbar.php'); ?>
-	
-	<!-- main pagina -->
+	<?php include(__DIR__.'/navbar.php');?>
 	<section id="maintop">
-		<header class="super-top">
-		<h1>Crea il tuo sito WEB!</h1>
-		<h2>Guarda come può diventare il sito web <br>
-			per te o la tua azienda.
-		</h2>
-		<!-- <button href="#scegli">Scegli il tuo pc</button> -->
-		<a href="#spacer">Scegli il tuo sito WEB</a>
-		</header>
+		<div class="principale">
+			<h1>Prova prova</h1>
+			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+			</h2>
+		</div>
+		<div class="chef muovi">
+			<h1>prova</h1>
+			<h2>prova</h2>
+			<a href="#chef" title="">Scopri di più</a>
+
+		</div>
+		<div class="metallo muovi">
+			<!-- sfondo chef -->
+			<h1>prova</h1>
+			<h2>prova</h2>
+			<a href="#metal" title="">Scopri di più</a>
+		</div>
+		<div class="capelli muovi">
+			<!-- sfondo chef -->
+			<h1>prova</h1>
+			<h2>prova</h2>
+			<a href="#azienda" title="">Scopri di più</a>
+		</div>
 	</section>
-	<section id="spacer">
-		<header class="spacer">
-			
-		</header><!-- /header -->
-</section>
-		<section id="scegli">
-		<a href="azienda.php" class="prova">
-			<header class="descr-fascia_azienda">
+	<section id="azienda" class="scegli">
+		<header class="descr-fascia_azienda banners">
 			<h1>Azienda</h1>
 			<h2>Scopri come può diventare il sito per il tuo azienda<br>
 				bassa, media e alta <br>
 				scegli la fascia più adatta al te e guarda cosa possiamo offrire
 			</h2>
-		</header></a><!-- /header -->
-		<section id="scegli">
-		<header class="spacer">
-			
+			<a href="" title="">Scopri i template disponibili</a>
 		</header>
-</section>
-		<section id="scegli">
-		<header class="descr-fascia_pers">
-			
+		<a href="#maintop" title="Tornasu"><img src="arrow-up.svg" alt="Torna su"></a>	
+	</section>
+	<section id="metal" class="scegli">
+		<header class="descr-fascia_pers banners">			
 			<h2>Scopri come può diventare il tuo sito WEB personale<br>
 				bassa, media e alta <br>
 				scegli la fascia più adatta al te e guarda cosa possiamo offrire</h2> 
-			<h1>Personale
-			</h1>
-		</header><!-- /header -->
-		<section id="scegli">
-		<header class="spacer">
-			
-		</header><!-- /header -->
-	<section id="scegli">
-		<a href="index_restaurant.php"><header class="descr-fascia_rest">
+			<h1>Personale</h1>
+			<a href="" title="">Scopri i template disponibili</a>
+		</header>
+	</section>
+	<section id="chef" class="scegli">
+		<header class="descr-fascia_rest banners">
 			<h1>Ristorante
 			</h1>
 			<h2>Scopri come può diventare il sito per il tuo ristorante<br>
 				bassa, media e alta <br>
 				scegli la fascia più adatta al te e guarda cosa possiamo offrire</h2> 
-			
-		</header></a><!-- /header -->
-		<section id="scegli">
-		<header class="spacer">
-			
-		</header><!-- /header -->
-		<section id="scegli">
-		<header class="descr-fascia_bar">
-			
+				<a href="" title="">Scopri i template disponibili</a>
+		</header>
+	</section>
+	<section id="scegli">
+		<header class="descr-fascia_bar banners">	
 			<h2>
 			Scopri come può diventare il sito per il tuo bar<br>
 				bassa, media e alta <br>
 				scegli la fascia più adatta al te e guarda cosa possiamo offrire 
 			</h2>
 			<h1>Bar</h1>
-		</header><!-- /header -->
-		<section id="scegli">
-		<header class="spacer">
-			
-		</header><!-- /header -->
-		
-	
-		
+			<a href="" title="">Scopri i template disponibili</a>
+		</header>
 	</section>
-
-		
-
-		
-
-
-	
-		</body>
-		</html>
+</body>
+</html>
