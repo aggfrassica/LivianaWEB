@@ -26,7 +26,7 @@ a{
 
 
 .sopra{
-  background: #06162e;
+  background: #313131;
   position: sticky;
   top: 0;
   z-index: 3;
@@ -149,7 +149,7 @@ pagina alto*/
 /*
 Tornasu*/
 #azienda img{
-  width: 10rem;
+  width: 7rem;
   z-index: 5;
   position: fixed;
   bottom: 2vh;
@@ -223,19 +223,36 @@ Tornasu*/
   padding: 2rem;
 }
 
-.descr-fascia_bar{
+.descr-fascia_dent{
   display: flex;
-  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/bar.jpg");
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/dent.jpg");
   background-size: cover;
   background-position: center;
   color: white;
 
 }
-.descr-fascia_bar h1{
+.descr-fascia_dent h1{
   font-size: 4rem;
   padding: 2rem;
 }
-.descr-fascia_bar h2{
+.descr-fascia_dent h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.descr-fascia_altro{
+  display: flex;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/heroimg2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+}
+.descr-fascia_altro h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.descr-fascia_altro h2{
   font-weight: 300;
   font-size: 2rem;
   padding: 2rem;

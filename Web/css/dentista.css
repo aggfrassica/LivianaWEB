@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+p{
+  font-size: 2rem;
+	padding: 3rem;
+}
+a{
+  text-decoration: none;
+}
+a{
+  color: white;
+  transition: 0.4s;
+  font-size: 2rem;
+}
+
+/*
+navbar*/
+
+
+.sopra{
+  background: #06162e;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-shadow: 1px 1px 10px black;
+}
+
+#scegli img{
+  width: 7rem;
+  z-index: 5;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  filter: drop-shadow(0px 0px 20px white);
+}
+
+/*
+pagina alto*/
+
+.super-top{
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.8), transparent),url("./../img/dentista/heroimg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.super-top h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.super-top h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.super-top a{
+  margin-top: 5rem;
+  padding: 2rem 6rem;
+  background: #313131;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+
+/*pagina scegli fascia*/
+#scegli{
+  background: #dfdfdf;
+}
+
+.contact_us{
+  display: flex;
+  min-height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/dentista/trovarci.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+  /* flex-direction: column; */
+}
+.contact_us h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.contact_us h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.storia{
+  display: flex;
+  min-height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/dentista/chisiamo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+  /* flex-direction: column; */
+}
+.storia h1{
+    font-size: 4rem;
+    padding: 2rem;
+  }
+  .storia h2{
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .servizi{
+    display: flex;
+    min-height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/dentista/servizi.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+    /* flex-direction: column; */
+  }
+  .servizi h1{
+      font-size: 4rem;
+      padding: 2rem;
+    }
+    .servizi h2{
+      font-weight: 300;
+      font-size: 2rem;
+      padding: 2rem;
+    }
+  .trovarmi{
+    display: flex;
+    min-height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.7), transparent),url("./../img/dentista/trovarci.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+    /* flex-direction: column; */
+  }
+  .trovarmi h1{
+      font-size: 4rem;
+      padding: 2rem;
+    }
+    .trovarmi h2{
+      font-weight: 300;
+      font-size: 2rem;
+      padding: 2rem;
+    }
+.spacer{
+  display: flex;
+  min-height: 50vh;
+  background: #bbb;
+  background-size: cover;
+  background-position: center;
+ 
+  
+  /* flex-direction: column; */
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*
+media query per responsivet*/
+
+@media screen and (max-width: 950px){
+  /*body{
+    display: none;
+  }*/
+  html{
+    font-size: 60%;
+  }
+  nav{
+    display: flex;
+    text-align: center;
+  }
+  #logo{
+    padding: 2rem;
+
+  }
+  .mySlides{
+    flex-wrap: wrap;
+  }
+  .mostra-fascia{
+    width: 100%;
+  }
+}
+
+

@@ -36,7 +36,7 @@
 				bassa, media e alta <br>
 				scegli la fascia più adatta al te e guarda cosa possiamo offrire 
 			</h2>
-			
+			<a href="#maintop" title="Tornasu"><img src="arrow-up.svg" alt="Torna su"></a>	
 		</header><!-- /header -->
 	
 		<section id="scegli">
